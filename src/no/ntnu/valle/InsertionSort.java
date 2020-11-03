@@ -2,7 +2,7 @@ package no.ntnu.valle;
 
 public class InsertionSort {
 
-    public static void insertionSort(int[] A)
+    public static Integer[] insertionSort(Integer[] A)
     {
         int n = A.length;
         for (int i = 1; i < n; i++)
@@ -14,11 +14,14 @@ public class InsertionSort {
                 A[idx] = A[idx-1];
                 idx--;
             }
+            //System.out.println(m);
             A[idx] = m;
         }
-        for (int i = 0; i < n-1; i++)
-        {
-            //System.out.println(A[i]);
-        }
+//        for (int i = 0; i < n-1; i++)
+//        {
+//            System.out.println(A[i]);
+//        }
+    return A;
     }
+
 }
